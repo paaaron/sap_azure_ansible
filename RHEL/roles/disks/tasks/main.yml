@@ -1,0 +1,9 @@
+---
+
+- name: disk setup
+  shell: "echo {{disk}}"
+  loop:
+    - /dev/disk/azure/scsi1/lun0
+    - /dev/disk/azure/scsi1/lun1
+    - /dev/disk/azure/scsi1/lun2
+    - /dev/disk/azure/scsi1/lun3
