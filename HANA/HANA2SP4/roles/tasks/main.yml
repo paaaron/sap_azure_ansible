@@ -1,0 +1,5 @@
+---
+- name: deploy hdblcm install template
+  template:
+    src: "{{ 'hdbserver_hana2sp4_xs.j2' if xsinstall else 'hdbserver_hana2sp4_vanilla.j2'}}"
+    dest: /hana/shared/install/hdbserver_{{ sap_sid }}_install.cfg

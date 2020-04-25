@@ -33,5 +33,6 @@
     - zlib-devel
     - libatomic
     - compat-sap-c++-7
+    - compat-sap-c++-5
   tags:
     - disk_setup
